@@ -1,1 +1,11 @@
-
+Cài đặt môi trường phát triển (Visual Studio 2022, .NET 9.0 SDK).
+Khởi tạo dự án ASP.NET Core MVC với mẫu mặc định.
+Tìm hiểu về cách phát triển mô hình MVC trong ASP.NET Core.
+Nghiên cứu tài liệu về ASP.NET Research Core Identity và Entity Framework Core.
+Viết báo cáo và nêu lý do chọn tài liệu.
+Kết nối SQL Server cơ sở dữ liệu với Entity Framework Core.
+Viết tài liệu mô tả chức năng người dùng (User Stories).
+Tạo cơ sở Models cho hệ thống.
+Xây dựng code cho website.
+Viếtbáo cáo chuyên đề, hoàn thành file báo cáo
+Nộp website lên Github, nộp file báo cáo lên LMS
