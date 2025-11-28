@@ -52,7 +52,7 @@ Website gồm trang dành cho **người dùng** và **quản trị viên**, gi�
 - Cập nhật số lượng  
 - Đăng ký / đăng nhập  
 - Đặt hàng  
-
+- Xem tin tức
 ---
 
 ## 🛒 2. Giỏ hàng
@@ -66,7 +66,7 @@ Website gồm trang dành cho **người dùng** và **quản trị viên**, gi�
 ## 🧑‍💼 3. Chức năng quản trị (Admin)
 - Quản lý sản phẩm  
 - Quản lý danh mục  
-- Quản lý menu, banner  
+- Quản lý menu 
 - Quản lý khách hàng  
 - Quản lý đơn hàng   
 
