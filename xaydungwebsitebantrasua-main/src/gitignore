@@ -1,0 +1,22 @@
+
+# Ignore build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+
+# Ignore Visual Studio folder
+.vs/
+
+# Ignore NuGet packages
+packages/
+
+# Logs
+*.log
+
+# User files
+*.user
+*.suo
+
+# Publish folder
+publish/

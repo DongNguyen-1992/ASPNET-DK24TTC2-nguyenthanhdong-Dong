@@ -1,0 +1,223 @@
+﻿@model ProTechTiveGear.Models.Blog
+
+@{
+    ViewBag.Title = Model.Title + " - Tin Tức";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+
+<style>
+    .blog-detail-section {
+        padding: 60px 0;
+        background: #f9f9f9;
+    }
+    
+    .blog-detail-container {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .blog-header-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .no-image-placeholder {
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    
+    .no-image-placeholder i {
+        font-size: 5rem;
+        opacity: 0.5;
+    }
+    
+    .blog-content-wrapper {
+        padding: 40px;
+    }
+    
+    .blog-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+    
+    .blog-meta {
+        display: flex;
+        gap: 30px;
+        padding: 20px 0;
+        border-bottom: 2px solid #f0f0f0;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #666;
+    }
+    
+    .meta-item i {
+        color: #FF6B6B;
+        font-size: 1.2rem;
+    }
+    
+    .blog-short-desc {
+        background: #fff9e6;
+        border-left: 4px solid #FFE66D;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+    
+    .blog-short-desc p {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #666;
+        font-style: italic;
+        line-height: 1.7;
+    }
+    
+    .blog-main-content {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #444;
+    }
+    
+    .blog-main-content p {
+        margin-bottom: 20px;
+    }
+    
+    .blog-main-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+    
+    .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 30px;
+        background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+        color: #333;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 30px;
+    }
+    
+    .back-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .back-button i {
+        transition: transform 0.3s ease;
+    }
+    
+    .back-button:hover i {
+        transform: translateX(-5px);
+    }
+    
+    @@media (max-width: 768px) {
+        .blog-title {
+            font-size: 2rem;
+        }
+        
+        .blog-content-wrapper {
+            padding: 25px;
+        }
+        
+        .blog-header-image,
+        .no-image-placeholder {
+            height: 250px;
+        }
+    }
+</style>
+
+<section class="blog-detail-section">
+    <div class="container">
+        <div class="blog-detail-container">
+            @if (!string.IsNullOrEmpty(Model.Picture))
+            {
+                <img src="~/img/Item/@Model.Picture" alt="@Model.Title" class="blog-header-image" />
+            }
+            else
+            {
+                <div class="no-image-placeholder">
+                    <i class="fas fa-image"></i>
+                </div>
+            }
+            
+            <div class="blog-content-wrapper">
+                <h1 class="blog-title">@Model.Title</h1>
+                
+                <div class="blog-meta">
+                    <div class="meta-item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>
+                            @if (Model.DateImport.HasValue)
+                            {
+                                @Model.DateImport.Value.ToString("dd/MM/yyyy")
+                            }
+                            else
+                            {
+                                <span>Chưa có ngày</span>
+                            }
+                        </span>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <i class="far fa-clock"></i>
+                        <span>
+                            @if (Model.DateImport.HasValue)
+                            {
+                                @Model.DateImport.Value.ToString("HH:mm")
+                            }
+                        </span>
+                    </div>
+                </div>
+                
+                @if (!string.IsNullOrEmpty(Model.ShortTitle))
+                {
+                    <div class="blog-short-desc">
+                        <p>@Model.ShortTitle</p>
+                    </div>
+                }
+                
+                <div class="blog-main-content">
+                    @if (!string.IsNullOrEmpty(Model.Describe))
+                    {
+                        @Html.Raw(Model.Describe)
+                    }
+                    else
+                    {
+                        <p class="text-muted"><em>Nội dung đang được cập nhật...</em></p>
+                    }
+                </div>
+                
+                <a href="@Url.Action("Index", "Home")" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Quay lại danh sách tin tức
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,190 @@
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\ApplicationInsights.config
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\ProTechTiveGear.dll.config
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\ProTechTiveGear.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\ProTechTiveGear.pdb
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\csc.exe
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\csc.exe.config
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\csc.rsp
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\csi.exe
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\csi.exe.config
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\csi.rsp
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.Managed.Core.targets
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.AppContext.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Collections.Immutable.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Console.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.IO.Compression.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.IO.FileSystem.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.IO.Pipes.AccessControl.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.IO.Pipes.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Reflection.Metadata.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Security.AccessControl.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Security.Claims.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Security.Principal.Windows.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.ValueTuple.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Xml.XmlDocument.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Xml.XPath.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\vbc.exe
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\vbc.exe.config
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\vbc.rsp
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\VBCSCompiler.exe
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\roslyn\VBCSCompiler.exe.config
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Antlr3.Runtime.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\EntityFramework.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\EntityFramework.SqlServer.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.Agent.Intercept.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.DependencyCollector.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.Web.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.WindowsServer.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.ApplicationInsights.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.Web.Infrastructure.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Newtonsoft.Json.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Diagnostics.DiagnosticSource.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Helpers.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Mvc.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Optimization.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Razor.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.WebPages.Deployment.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.WebPages.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.WebPages.Razor.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\WebGrease.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\EntityFramework.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\EntityFramework.SqlServer.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Helpers.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Mvc.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Optimization.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.Razor.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.WebPages.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.WebPages.Deployment.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Web.WebPages.Razor.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Newtonsoft.Json.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Antlr3.Runtime.pdb
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\System.Diagnostics.DiagnosticSource.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.DependencyCollector.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.WindowsServer.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.AI.Web.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\obj\Debug\ProTechTiveGear.csproj.AssemblyReference.cache
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\obj\Debug\ProTechTiveGear.csproj.CoreCompileInputs.cache
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\obj\Debug\ProTechT.1D88A8AC.Up2Date
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\obj\Debug\ProTechTiveGear.dll
+H:\ĐỒ ÁN TỐT NGHIỆP\xaydungwebsitebantrasua-main\src\Website\obj\Debug\ProTechTiveGear.pdb
+C:\Users\Kai\Downloads\aDong\Website\bin\ApplicationInsights.config
+C:\Users\Kai\Downloads\aDong\Website\bin\ProTechTiveGear.dll.config
+C:\Users\Kai\Downloads\aDong\Website\bin\ProTechTiveGear.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\ProTechTiveGear.pdb
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\csc.exe
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\csc.exe.config
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\csc.rsp
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\csi.exe
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\csi.exe.config
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\csi.rsp
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.AppContext.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Console.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.IO.Compression.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Security.Claims.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.ValueTuple.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\vbc.exe
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\vbc.exe.config
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\vbc.rsp
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kai\Downloads\aDong\Website\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kai\Downloads\aDong\Website\bin\Antlr3.Runtime.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\EntityFramework.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\EntityFramework.SqlServer.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.Web.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\Newtonsoft.Json.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Helpers.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Mvc.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Optimization.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Razor.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.WebPages.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\WebGrease.dll
+C:\Users\Kai\Downloads\aDong\Website\bin\EntityFramework.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\EntityFramework.SqlServer.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Helpers.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Mvc.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Optimization.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.Razor.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.WebPages.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\Newtonsoft.Json.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\Antlr3.Runtime.pdb
+C:\Users\Kai\Downloads\aDong\Website\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.AI.Web.xml
+C:\Users\Kai\Downloads\aDong\Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kai\Downloads\aDong\Website\obj\Debug\ProTechTiveGear.csproj.AssemblyReference.cache
+C:\Users\Kai\Downloads\aDong\Website\obj\Debug\ProTechTiveGear.csproj.CoreCompileInputs.cache
+C:\Users\Kai\Downloads\aDong\Website\obj\Debug\ProTechT.1D88A8AC.Up2Date
+C:\Users\Kai\Downloads\aDong\Website\obj\Debug\ProTechTiveGear.dll
+C:\Users\Kai\Downloads\aDong\Website\obj\Debug\ProTechTiveGear.pdb

@@ -1,0 +1,334 @@
+﻿@model ProTechTiveGear.Models.Blog
+
+@{
+    ViewBag.Title = "Chỉnh Sửa Tin Tức";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .create-form-container {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .form-header {
+        border-bottom: 3px solid #ffc107;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .form-header h2 {
+        color: #333;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .form-group-modern {
+        margin-bottom: 25px;
+    }
+    
+    .form-group-modern label {
+        display: block;
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    
+    .form-group-modern label .required {
+        color: #dc3545;
+        margin-left: 3px;
+    }
+    
+    .form-control-modern {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+    
+    .form-control-modern:focus {
+        outline: none;
+        border-color: #ffc107;
+        box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+    }
+    
+    .image-upload-area {
+        border: 2px dashed #ffc107;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        background: #fffbf0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .image-upload-area:hover {
+        background: #fff8e1;
+        border-color: #ffb300;
+    }
+    
+    .image-upload-area i {
+        font-size: 3rem;
+        color: #ffc107;
+        margin-bottom: 15px;
+    }
+    
+    .current-image {
+        max-width: 100%;
+        max-height: 300px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .image-preview {
+        max-width: 300px;
+        max-height: 300px;
+        margin: 15px auto;
+        border-radius: 10px;
+        display: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .btn-modern {
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 15px;
+    }
+    
+    .btn-submit {
+        background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+        color: #333;
+    }
+    
+    .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(255, 193, 7, 0.4);
+    }
+    
+    .btn-cancel {
+        background: #6c757d;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    .btn-cancel:hover {
+        background: #5a6268;
+    }
+    
+    .form-actions {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #e0e0e0;
+        text-align: right;
+    }
+    
+    .validation-summary {
+        background: #fff3cd;
+        border: 1px solid #ffc107;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .validation-summary ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+    
+    .char-counter {
+        font-size: 12px;
+        color: #6c757d;
+        text-align: right;
+        margin-top: 5px;
+    }
+    
+    .image-info {
+        background: #e3f2fd;
+        border-left: 4px solid #2196f3;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+</style>
+
+<div class="create-form-container">
+    <div class="form-header">
+        <h2>
+            <i class="fas fa-edit"></i> Chỉnh Sửa Tin Tức
+        </h2>
+    </div>
+
+    @using (Html.BeginForm("Edit", "Blogs", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.ValidationSummary(true, "", new { @class = "validation-summary" })
+        @Html.HiddenFor(model => model.ID)
+        @Html.HiddenFor(model => model.Picture)
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group-modern">
+                    <label for="Title">
+                        Tiêu Đề <span class="required">*</span>
+                    </label>
+                    @Html.TextBoxFor(model => model.Title, new { 
+                        @class = "form-control-modern", 
+                        placeholder = "Nhập tiêu đề tin tức...",
+                        maxlength = "200",
+                        id = "titleInput"
+                    })
+                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                    <div class="char-counter">
+                        <span id="titleCount">@(Model.Title != null ? Model.Title.Length : 0)</span>/200 ký tự
+                    </div>
+                </div>
+
+                <div class="form-group-modern">
+                    <label for="ShortTitle">
+                        Mô Tả Ngắn <span class="required">*</span>
+                    </label>
+                    @Html.TextAreaFor(model => model.ShortTitle, new { 
+                        @class = "form-control-modern", 
+                        rows = "3",
+                        placeholder = "Nhập mô tả ngắn gọn về tin tức...",
+                        maxlength = "500",
+                        id = "shortTitleInput"
+                    })
+                    @Html.ValidationMessageFor(model => model.ShortTitle, "", new { @class = "text-danger" })
+                    <div class="char-counter">
+                        <span id="shortTitleCount">@(Model.ShortTitle != null ? Model.ShortTitle.Length : 0)</span>/500 ký tự
+                    </div>
+                </div>
+
+                <div class="form-group-modern">
+                    <label for="Describe">
+                        Nội Dung Chi Tiết <span class="required">*</span>
+                    </label>
+                    @Html.TextAreaFor(model => model.Describe, new { 
+                        @class = "form-control-modern", 
+                        rows = "10",
+                        id = "describeEditor",
+                        placeholder = "Nhập nội dung chi tiết của tin tức..."
+                    })
+                    @Html.ValidationMessageFor(model => model.Describe, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group-modern">
+                    <label for="DateImport">
+                        Ngày Đăng
+                    </label>
+                    @Html.TextBoxFor(model => model.DateImport, "{0:yyyy-MM-dd}", new { 
+                        @class = "form-control-modern", 
+                        type = "date"
+                    })
+                    @Html.ValidationMessageFor(model => model.DateImport, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group-modern">
+                    <label>
+                        Ảnh Đại Diện
+                    </label>
+                    
+                    @if (!string.IsNullOrEmpty(Model.Picture))
+                    {
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <p style="font-weight: 500; color: #666; margin-bottom: 10px;">Ảnh hiện tại:</p>
+                            <img src="~/img/Item/@Model.Picture" alt="Current Image" class="current-image" id="currentImage" />
+                            <div class="image-info">
+                                <i class="fas fa-info-circle"></i> 
+                                <small>Chọn ảnh mới để thay thế</small>
+                            </div>
+                        </div>
+                    }
+                    
+                    <div class="image-upload-area" onclick="document.getElementById('imageFile').click()">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p style="margin: 0; color: #ffc107; font-weight: 500;">
+                            Click để chọn ảnh mới
+                        </p>
+                        <small style="color: #6c757d;">
+                            Định dạng: JPG, PNG, GIF<br>
+                            Kích thước tối đa: 5MB
+                        </small>
+                    </div>
+                    <input type="file" 
+                           id="imageFile" 
+                           name="imageFile" 
+                           accept="image/*" 
+                           style="display: none;" 
+                           onchange="previewImage(this)" />
+                    <img id="imagePreview" class="image-preview" alt="Preview" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-modern btn-submit">
+                <i class="fas fa-save"></i> Cập Nhật
+            </button>
+            <a href="@Url.Action("Index")" class="btn-modern btn-cancel">
+                <i class="fas fa-times"></i> Hủy
+            </a>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    
+    <script>
+        // Character counter for Title
+        $('#titleInput').on('input', function() {
+            var length = $(this).val().length;
+            $('#titleCount').text(length);
+        });
+
+        // Character counter for Short Title
+        $('#shortTitleInput').on('input', function() {
+            var length = $(this).val().length;
+            $('#shortTitleCount').text(length);
+        });
+
+        // Image preview
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    $('#currentImage').hide();
+                    $('#imagePreview').attr('src', e.target.result).show();
+                }
+                
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Form validation
+        $('form').on('submit', function(e) {
+            var title = $('#titleInput').val().trim();
+            var shortTitle = $('#shortTitleInput').val().trim();
+            var describe = $('#describeEditor').val().trim();
+
+            if (!title || !shortTitle || !describe) {
+                e.preventDefault();
+                alert('Vui lòng điền đầy đủ các trường bắt buộc!');
+                return false;
+            }
+        });
+    </script>
+}

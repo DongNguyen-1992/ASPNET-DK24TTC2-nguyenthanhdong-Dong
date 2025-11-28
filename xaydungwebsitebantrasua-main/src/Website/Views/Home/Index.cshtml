@@ -1,0 +1,240 @@
+﻿@model IEnumerable<ProTechTiveGear.Models.Blog>
+
+@{
+    ViewBag.Title = "Tin Tức - Trà Sữa Online";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+
+<style>
+    .news-section {
+        padding: 60px 0;
+        background: #f9f9f9;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #FF6B6B;
+        text-align: center;
+        position: relative;
+        padding-bottom: 15px;
+    }
+    
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #FF6B6B, #FFE66D);
+        border-radius: 2px;
+    }
+    
+    .section-subtitle {
+        text-align: center;
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+    }
+    
+    .news-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: all 0.4s ease;
+        margin-bottom: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid transparent;
+    }
+    
+    .news-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(255, 107, 107, 0.2);
+        border-color: #FF6B6B;
+    }
+    
+    .news-image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+    
+    .news-card:hover .news-image {
+        transform: scale(1.1);
+    }
+    
+    .news-image-wrapper {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .news-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: linear-gradient(135deg, #FF6B6B, #FFE66D);
+        color: #333;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        z-index: 1;
+    }
+    
+    .news-content {
+        padding: 25px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .news-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 12px;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .news-date {
+        font-size: 0.9rem;
+        color: #FF6B6B;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .news-excerpt {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .read-more {
+        color: #FF6B6B;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .read-more:hover {
+        color: #FFE66D;
+        text-decoration: none;
+        gap: 12px;
+    }
+    
+    .read-more i {
+        transition: transform 0.3s ease;
+    }
+    
+    .read-more:hover i {
+        transform: translateX(5px);
+    }
+    
+    .no-news {
+        text-align: center;
+        padding: 80px 20px;
+        color: #999;
+    }
+    
+    .no-news i {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        color: #FFE66D;
+    }
+</style>
+
+<section class="news-section">
+    <div class="container">
+        <h2 class="section-title">
+            Tin Tức Mới Nhất
+        </h2>
+        <p class="section-subtitle">
+            Cập nhật những thông tin mới nhất về sản phẩm, khuyến mãi và sự kiện
+        </p>
+        
+        @if (Model != null && Model.Any())
+        {
+            <div class="row">
+                @foreach (var news in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image-wrapper">
+                                @if (!string.IsNullOrEmpty(news.Picture))
+                                {
+                                    <img src="~/img/Item/@news.Picture" alt="@news.Title" class="news-image" />
+                                }
+                                else
+                                {
+                                    <img src="~/img/Item/Tra-Sua-Truyen-Thong.png" alt="No Image" class="news-image" />
+                                }
+                                <span class="news-badge">Mới</span>
+                            </div>
+                            
+                            <div class="news-content">
+                                <div class="news-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    @if (news.DateImport.HasValue)
+                                    {
+                                        @news.DateImport.Value.ToString("dd/MM/yyyy")
+                                    }
+                                    else
+                                    {
+                                        <span>Chưa có ngày</span>
+                                    }
+                                </div>
+                                
+                                <h3 class="news-title">@news.Title</h3>
+                                
+                                <p class="news-excerpt">
+                                    @if (!string.IsNullOrEmpty(news.ShortTitle))
+                                    {
+                                        @news.ShortTitle
+                                    }
+                                    else
+                                    {
+                                        <em>Không có mô tả</em>
+                                    }
+                                </p>
+                                
+                                <a href="@Url.Action("Details", "Blogs", new { id = news.ID })" class="read-more">
+                                    Đọc thêm <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="no-news">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Chưa có tin tức nào</h3>
+                <p>Hãy quay lại sau để xem những tin tức mới nhất về trà sữa!</p>
+            </div>
+        }
+    </div>
+</section>

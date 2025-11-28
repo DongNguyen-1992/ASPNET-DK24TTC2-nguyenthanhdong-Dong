@@ -1,0 +1,159 @@
+﻿@model ProTechTiveGear.Models.Blog
+
+@{
+    ViewBag.Title = "Xóa Tin Tức";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .delete-container {
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .warning-icon {
+        font-size: 5rem;
+        color: #dc3545;
+        margin-bottom: 20px;
+        animation: pulse 2s infinite;
+    }
+    
+    @@keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .delete-title {
+        color: #333;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .delete-message {
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .blog-preview {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    
+    .preview-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .preview-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .preview-meta {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 10px;
+    }
+    
+    .btn-modern {
+        padding: 12px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        min-width: 120px;
+    }
+    
+    .btn-delete-confirm {
+        background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        color: white;
+        margin-right: 15px;
+    }
+    
+    .btn-delete-confirm:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(220, 53, 69, 0.4);
+    }
+    
+    .btn-cancel {
+        background: #6c757d;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .btn-cancel:hover {
+        background: #5a6268;
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<div class="delete-container">
+    <i class="fas fa-exclamation-triangle warning-icon"></i>
+    
+    <h2 class="delete-title">Bạn có chắc chắn muốn xóa?</h2>
+    <p class="delete-message">
+        Hành động này không thể hoàn tác. Tin tức và hình ảnh liên quan sẽ bị xóa vĩnh viễn khỏi hệ thống.
+    </p>
+
+    <div class="blog-preview">
+        @if (!string.IsNullOrEmpty(Model.Picture))
+        {
+            <img src="~/img/Item/@Model.Picture" alt="@Model.Title" class="preview-image" />
+        }
+        
+        <div class="preview-title">@Model.Title</div>
+        
+        <div class="preview-meta">
+            <i class="fas fa-calendar-alt"></i> 
+            @(Model.DateImport.HasValue ? Model.DateImport.Value.ToString("dd/MM/yyyy") : "Chưa có ngày")
+            
+            <span style="margin: 0 10px;">|</span>
+            
+            <i class="fas fa-hashtag"></i> ID: @Model.ID
+        </div>
+        
+        <div class="text-muted">
+            @if (!string.IsNullOrEmpty(Model.ShortTitle))
+            {
+                @Model.ShortTitle
+            }
+            else
+            {
+                <em>Không có mô tả ngắn</em>
+            }
+        </div>
+    </div>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <button type="submit" class="btn-modern btn-delete-confirm">
+                <i class="fas fa-trash-alt"></i> Xóa Ngay
+            </button>
+            <a href="@Url.Action("Index")" class="btn-modern btn-cancel">
+                <i class="fas fa-times"></i> Hủy Bỏ
+            </a>
+        </div>
+    }
+</div>
